@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITA</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- /******** MENU *************/ -->
+    <header class="container-content">
+        <div class="content-social">
+            <div class="logo">
+                <img src="./assets/images/icon/logo.png" alt="Logo">
+            </div>
+            <ul class="liste-social">
+                <li class="link-social"><a href="#">Forum</a></li>
+                <li class="link-social"><a href="#">Documentation</a></li>
+                <li class="link-social"><a href="#">Contact</a></li>
+                <li class="link-social"><a href="#">
+                    <img src="./assets/images/icon/search.png" alt="Search">
+                </a></li>
+            </ul>
+        </div>
+        <div class="content-header">
+            <ul class="liste-header">
+                <li class="link-header"><a href="#">Accueil</a></li>
+                <li class="link-header"><a href="#">Ateliers</a></li>
+                <li class="link-header"><a href="#">Divisions</a></li>
+                <li class="link-header"><a href="#">Actualités</a></li>
+                <li class="link-header"><a href="#">Produits</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- /********* BANNER *******/ -->
+
+    <section class="content-banner">
+        <div class="slide-container">
+            <div class="custom-slider fade">
+                <!-- <div class="slide-index">1 / 3</div> -->
+                <img class="slide-img" src="./assets/images/illustration/actualité.png">
+                <!-- <div class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div> -->
+            </div>
+            <div class="custom-slider fade" style="display: none;">
+                <!-- <div class="slide-index">2 / 3</div> -->
+                <img class="slide-img" src="./assets/images/illustration/image2.png" >
+                <!-- <div class="slide-text">Nullam luctus aliquam ornare. </div> -->
+            </div>
+            <div class="custom-slider fade" style="display: none;">
+                <!-- <div class="slide-index">3 / 3</div> -->
+                <img class="slide-img" src="./assets/images/illustration/image3.png" >
+                <!-- <div class="slide-text">Praesent lobortis libero sed egestas suscipit.</div> -->
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+    </section>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
