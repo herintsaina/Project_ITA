@@ -236,3 +236,23 @@ header {
 .picture-page img {
     width: 100%;
 }
+
+.content-laboratoire {
+    max-width: 92%;
+    position: relative;
+    margin: auto;
+}
+
+.title-default {
+    font-weight: 600;
+}
+
+.title-default::after {
+    content: ' ';
+    width: 243px;
+    height: 22px;
+    flex-shrink: 0;
+    background: #96AD38;
+    display: flex;
+    margin-left: 30px;
+}
