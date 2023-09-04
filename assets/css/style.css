@@ -434,3 +434,53 @@ font-family: 'Quicksand';
     padding:14px 23px ;
 } 
 
+
+/************* FORM ************/
+
+.content-form {
+    max-width: 85%;
+    margin: auto;
+}
+
+.content-form .title-default{
+    font-size: 50px;
+}
+
+
+
+table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    font-size: 30px;
+}
+
+table h3{
+    text-align: left;
+}
+
+table p{
+    text-align: left;
+}
+
+
+tr {
+    border: 1px solid #000;
+}
+
+th {
+    padding:20px 37px ;
+}
+
+td {
+    border: 1px solid #000;
+    
+}
+
+thead tr:first-child{
+    background: #d9d9d95e;
+    border: 0px;
+}
+
+tr:first-child th:first-child{
+    text-align: left;
+}
