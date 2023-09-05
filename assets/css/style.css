@@ -351,6 +351,7 @@ footer {
     font-size: 30px;
     color: #fff;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .location-footer {
@@ -733,6 +734,20 @@ table button {
         display: flex;
     }
 
+    /******* FOOTER *********/
+
+    .reseaux-sociaux {
+        justify-content: center;
+    }
+
+    .mini-menu-footer {
+        justify-content: center;
+    }
+
+    .liste-mini {
+        text-align: center;
+    }
+
 }
 
 @media (min-width:768px) {
@@ -768,6 +783,20 @@ table button {
 
     #top {
         display: none;
+    }
+
+    /******* FOOTER *********/
+
+    .reseaux-sociaux {
+        justify-content: flex-start;
+    }
+
+    .mini-menu-footer {
+        justify-content: space-between;
+    }
+
+    .liste-mini {
+        text-align: left;
     }
 
 }
