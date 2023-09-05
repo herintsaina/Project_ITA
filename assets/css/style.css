@@ -12,8 +12,12 @@ body {
 /********************/
 
 .container-content {
-    max-width: 95%;
-    margin: auto;
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
 }
 
 
@@ -28,6 +32,8 @@ header {
     justify-content: space-between;
     height: 115px;
     align-items: center;
+    max-width: 92%;
+    margin: auto;
 }
 
 .liste-social {
@@ -79,10 +85,12 @@ header {
 
 .Banner {
     height: 100vh;
+    display: flex;
+    align-items: flex-end;
 }
 
 .content-banner {
-    height: 77%;
+    height: 100%;
 }
 
 
@@ -264,7 +272,7 @@ header {
 /************* CONTENUE 1 *****************/
 
 .image-page {
-    height: 78%;
+    height: 82%;
     position: relative;
 }
 
@@ -367,6 +375,7 @@ footer {
 .content-contact {
     max-width: 80%;
     margin: auto;
+    padding-top: 100px;
 }
 
 .contact {
@@ -441,6 +450,7 @@ font-family: 'Quicksand';
 .content-form {
     max-width: 75%;
     margin: auto;
+    padding-top: 200px;
 }
 
 .content-form .title-default{
@@ -518,4 +528,196 @@ table button {
     margin: auto;
     font-size: 30px;
     padding-bottom: 100px;
+}
+
+
+/************* HAMBURGER MENU ************/
+
+#top {
+    display: flex;
+    background: #fff;
+    align-items: center;
+    position: fixed;
+    z-index: 800;
+    width: 100%;
+    justify-content: space-between;
+    left: 0;
+}
+
+
+#top a[class^="modal"] {
+    display: block;
+}
+/* @media (min-width: 320px) */
+#top .modalOpen {
+    flex-grow: 0;
+    /* padding: 0.875rem 1rem; */
+    height: 50px;
+    margin: 20px;
+}
+#top a {
+    /* color: #FFF; */
+    text-decoration: none;
+}
+
+#menus {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: -150vw;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #0008;
+    box-shadow: inset 0 0 128px 128px #0008;
+    transition: left 0s 0.5s, opacity 0.5s;
+    text-align: center;
+    /* position: relative; */
+    z-index: 600;
+}
+
+#top a[class^="modal"] {
+    display: flex;
+}
+/* @media (min-width: 320px) */
+#menus > .modalClose {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#menus .menu-mobile-content {
+    width: 100%;
+    height: 46%;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    padding-bottom: 1em;
+    background: #fff;
+    box-shadow: 0 0.5em 1em 0.5em #0008;
+    transition: top 0.5s;
+}
+
+#menus > .menu-mobile-content {
+    display: flex;
+}
+
+#menus > .menu-mobile-content:before {
+    /* content: "Main Menu"; */
+    display: block;
+    text-align: left;
+    font-size: 1.25em;
+    padding: 1rem 1.25rem;
+    color: #003459;
+}
+
+#menus > .menu-mobile-content > .modalClose:before {
+    /* content: " "; */
+    background-image: url(../assets/images/icon/icons8-hamburger-menu-33.png);
+}
+/* @media (min-width: 320px) */
+#top .modalOpen:before, #menus > .menu-mobile-content > .modalClose:before {
+    font-size: 2em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+#menus:target {
+    left: 0;
+    opacity: 1;
+    transition: left 0s, top 0.5s, opacity 0.5s;
+}
+
+.logo-mobile {
+    margin: 20px;
+}
+.menu-mobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.modalOpen img {
+    height: 100%;
+}
+
+.modalClose {
+    display: flex;
+    align-items: center;
+}
+
+.liste-social-mobile a{
+    color: #000;
+}
+
+.liste-social-mobile {
+    list-style: none;
+    font-size: 30px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-direction: column; */
+    gap: 20px;
+}
+
+.liste-header-mobile {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    padding: 0px;
+    background-color: #2F2F2F;
+    padding-top: 50px;
+    margin: 0px;
+    padding-bottom: 50px;
+}
+
+.liste-header-mobile a {
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/************** RESPONSIVE *****************/
+
+@media (min-width:320px) {
+
+    /****** banner ****/
+
+    .Banner {
+        overflow: hidden;
+    }
+
+    /****** MENU  **********/
+
+    .content-social {
+        display: none;
+    }
+
+    .content-header {
+        display: none;
+    }
+
+}
+
+@media (min-width:768px) {
+    
+    /****** MENU  **********/
+
+    .content-social{
+        display: flex;
+    }
+
+    .content-header {
+        display: flex;
+    }
+
 }
