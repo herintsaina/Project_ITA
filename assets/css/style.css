@@ -324,6 +324,7 @@ header {
 
 .paragraphe-referance {
     display: flex;
+    flex-wrap: wrap;
 }
 
 /****** FOOTER ***********/
@@ -773,6 +774,47 @@ table button {
 
     .content-form {
         max-width: 92%;
+        padding-top: 65px;
+    }
+
+    .content-form .title-default::after {
+        margin-left: 10px;
+    }
+
+    .content-form .title-default{
+       font-size: 40px;
+    }
+
+    .form-liste {
+        margin-top: 40px;
+    }
+
+    /********** CONTENUE ***************/
+
+    .banner-contenue {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .image-page {
+        margin-top: 100px;
+    }
+
+    .image-page h2{
+        font-size: 40px;
+    }
+
+    .content-contenue1 .title-default {
+        font-size: 40px;
+    }
+
+    .content-contenue1 p{
+        font-size: 25px;
+    }
+
+    .paragraphe-referance img{
+        width: 100%;
     }
 }
 
@@ -838,6 +880,45 @@ table button {
 
     .content-form {
         max-width: 75%;
+        padding-top: 200px;
+    }
+
+    .content-form .title-default::after {
+        margin-left: 435px;
+    }
+
+    .content-form .title-default{
+        font-size: 50px;
+     }
+
+     .form-liste {
+        margin-top: 100px;
+    }
+
+   /********** CONTENUE ***************/
+
+   .banner-contenue {
+    height: 100vh;
+    }
+
+    .image-page {
+        margin-top: 0px;
+    }
+
+    .image-page h2{
+        font-size: 70px;
+    }
+
+    .content-contenue1 .title-default {
+        font-size: 50px;
+    }
+
+    .content-contenue1 p{
+        font-size: 30px;
+    }
+
+    .paragraphe-referance img{
+        width: auto;
     }
 
 }
