@@ -688,6 +688,12 @@ table button {
     text-decoration: none;
 }
 
+/******** TABLEAUX ************/
+
+.bg-thead {
+    background: #d9d9d95e;
+}
+
 
 /************** RESPONSIVE *****************/
 
@@ -748,6 +754,25 @@ table button {
         text-align: center;
     }
 
+    /****** FORM PAGE*********/
+
+    .tableaux-mobile {
+        display: table;
+        font-size: 25px;
+    }
+
+    .tableaux-mobile tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tableaux-computer {
+        display: none;
+    }
+
+    .content-form {
+        max-width: 92%;
+    }
 }
 
 @media (min-width:768px) {
@@ -797,6 +822,20 @@ table button {
 
     .liste-mini {
         text-align: left;
+    }
+
+    /****** FORM PAGE*********/
+
+    .tableaux-mobile {
+        display: none;
+    }
+
+    .tableaux-computer {
+        display: block;
+    }
+
+    .content-form {
+        max-width: 75%;
     }
 
 }
