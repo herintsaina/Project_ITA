@@ -405,6 +405,7 @@ footer {
 .formulair-contact {
     display: flex;
     padding-top: 50px;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -816,6 +817,12 @@ table button {
     .paragraphe-referance img{
         width: 100%;
     }
+
+    /********* CONTENUE 2 **************/
+
+    .content-contenue2 {
+        font-size: 25px;
+    }
 }
 
 @media (min-width:768px) {
@@ -919,6 +926,12 @@ table button {
 
     .paragraphe-referance img{
         width: auto;
+    }
+
+    /********* CONTENUE 2 **************/
+
+    .content-contenue2 {
+        font-size: 30px;
     }
 
 }
