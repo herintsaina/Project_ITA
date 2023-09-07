@@ -405,7 +405,7 @@ footer {
 .formulair-contact {
     display: flex;
     padding-top: 50px;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
 }
 
@@ -726,6 +726,7 @@ table button {
 
     .link-page {
         width: 100%;
+        border-radius: 30px;
     }
 
     /****** MENU  **********/
@@ -818,6 +819,10 @@ table button {
         width: 100%;
     }
 
+    .paragraphe-referance {
+        flex-wrap: wrap;
+    }
+
     /********* CONTENUE 2 **************/
 
     .content-contenue2 {
@@ -880,7 +885,11 @@ table button {
     }
 
     .link-page {
-        width: 31%;
+        width: 70%;
+    }
+
+    .content-page {
+        justify-content: center;
     }
     
     /****** MENU  **********/
@@ -914,22 +923,20 @@ table button {
 
     /****** FORM PAGE*********/
 
-    .tableaux-mobile {
-        display: none;
-    }
+    /* .tableaux-mobile {
+        
+    } */
 
-    .tableaux-computer {
+    /*.tableaux-computer {
         display: block;
-    }
+    } */
 
     .content-form {
         max-width: 75%;
         padding-top: 200px;
     }
 
-    .content-form .title-default::after {
-        margin-left: 435px;
-    }
+    
 
     .content-form .title-default{
         font-size: 50px;
@@ -1006,4 +1013,54 @@ table button {
     .formulair-contact {
         padding-top: 50px;
     }
+}
+
+@media (min-width:1024px) {
+    /***** BANNER *****/
+
+    .link-page {
+        width: 45%;
+    }
+
+    .content-page {
+        justify-content: space-between;
+    }
+
+     /****** FORM PAGE*********/
+
+     .tableaux-mobile {
+        display: none;
+    }
+
+    .tableaux-computer {
+        display: block;
+        font-size: 25px;
+    }
+
+    .content-form .title-default::after {
+        margin-left: 435px;
+    }
+
+}
+
+@media (min-width:1440px) {
+    /***** BANNER *****/
+
+    .link-page {
+        width: 31%;
+        border-radius: 20px;
+    }
+
+    /****** FORM PAGE*********/
+
+    .tableaux-computer {
+        font-size: 30px;
+    }
+
+    /******** CONTENUE 1 *********/
+
+    .paragraphe-referance {
+        flex-wrap: nowrap;
+    }
+
 }
