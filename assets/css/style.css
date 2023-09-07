@@ -823,6 +823,43 @@ table button {
     .content-contenue2 {
         font-size: 25px;
     }
+
+
+    /********* CONTACT ****************/
+
+    .content-contact .title-default::after {
+        margin-left: 30px;
+    }
+
+    .content-contact form input {
+        width: 330px;
+        height: 65px;
+        font-size: 25px;
+    }
+
+    .content-contact form {
+        font-size: 25px;
+    }
+
+    .content-contact form button {
+        font-size: 25px;
+    }
+
+    .content-contact form textarea {
+        font-size: 25px;
+    }
+
+    .content-contact .title-default {
+        font-size: 35px;
+    }
+
+    .contact {
+        padding-top: 0px;
+    }
+
+    .formulair-contact {
+        padding-top: 0px;
+    }
 }
 
 @media (min-width:768px) {
@@ -934,4 +971,39 @@ table button {
         font-size: 30px;
     }
 
+    /********* CONTACT ****************/
+
+     .content-contact .title-default::after {
+        margin-left: 250px;
+    }
+
+    .content-contact form input {
+        width: 527px;
+        height: 80px;
+        font-size: 30px;
+    }
+
+    .content-contact form {
+        font-size: 30px;
+    }
+
+    .content-contact form button {
+        font-size: 30px;
+    }
+
+    .content-contact form textarea {
+        font-size: 30px;
+    }
+
+    .content-contact .title-default {
+        font-size: 50px;
+    }
+
+    .contact {
+        padding-top: 96px;
+    }
+
+    .formulair-contact {
+        padding-top: 50px;
+    }
 }
